@@ -1,0 +1,39 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+body {
+    background: aquamarine;
+}
+.container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+h1 {
+    color: darkblue;
+    padding: 3rem;
+    font-size: 3rem;
+}
+input {
+    min-width: 600px;
+    height: 2rem;
+    border-radius: 13px 0 13px 0;
+    border: solid 3px rgb(38, 38, 115);
+    padding-left: 1rem;
+    color: olivedrab;
+    font-size: 1rem;
+    outline: none;
+}
+::placeholder {
+    color: orange;
+}
+button {
+    width: 200px;
+    height: 2rem;
+    background: orange;
+    border: none;
+}
+
