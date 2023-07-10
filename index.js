@@ -4,7 +4,7 @@ require('dotenv').config()
 
 const Todo = require("./models/todo")
 const todo = require("./models/todo")
-
+// const todoRoutes = require('./routes/todo')
 const bodyParser = require("body-parser")
 
 const app = express()
@@ -16,7 +16,7 @@ app.use(express.json())
 app.use(express.static("public"))
 app.use(bodyParser.urlencoded({extended: true}))
 app.use(bodyParser.json())
-app.use('/api/todo',todoRoutes)
+// app.use('/api/todo',todoRoutes)
 
 app.get("/", (request, response) => {
     Todo.find()
